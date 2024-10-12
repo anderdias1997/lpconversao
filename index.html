@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="textstyle">
+        <h1>Titulo 1</h1>
+        <p>parafrao 1</p>
+        <p>paragrafo 2</p>
+        <h2>chamada paração no formulário</h2> 
+    </div>
+   
+   
+   
+    <div class="container">
+ 
+
+        <form action="#"method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" oninput="validarTelefone()"required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>
+
+            <input type="checkbox" id="autorizacao" name="aurotizacao" required>
+            Concordo com o uso dos meus dados para fins de marketing.
+        </label>
+
+        <button type="submit">Enviar</button>
+
+   
+
+    </form>
+
+</div>
+
+    
+
+
+</body>
+</html>
