@@ -3,11 +3,9 @@ function validarTelefone() {
   const regex = /^[0-9]+$/; // Permite apenas números
   const telefoneErro = document.getElementById('telefone-erro');
   
-  if (!regex.test(telefone)) {
+  if (!regex.test(telefone) && telefone.length > 0) {
       telefoneErro.textContent = 'Digite apenas números no campo telefone.';
       telefoneErro.style.display = 'block';
-      // Limpar o campo ou destacar o erro visualmente
-      document.getElementById('telefone').value = '';
       return false;
   } else {
       telefoneErro.textContent = '';
@@ -24,3 +22,5 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
       window.location.href = 'paginaobrigado.html'; // Redireciona para a página de obrigado
   }
 });
+
+document.getElementById('telefone').addEventListener('input', validarTelefone);

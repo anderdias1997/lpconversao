@@ -6,72 +6,34 @@ body {
     box-sizing: border-box;
     background-color: rgba(1, 22, 46, 0.986);
     color: #333;
+    height: 100vh; /* Certifica que a altura do corpo ocupa 100% da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Ajusta a direção para coluna */
 }
 
-/* Estilos para os textos */
-.textstyle {
-    text-align: center;
-    color: aliceblue;
+/* Wrapper para centralizar o conteúdo */
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%;
 }
 
+/* Estilos para o container */
 .container {
     max-width: 600px;
-    margin: 0 auto;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #333;
-}
-
-/* Estilos para o formulário */
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Estilo para o botão */
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* Estilos para o footer */
-footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Estilos para as redes sociais */
 .social-media {
-    text-align: center;
     margin-top: 20px;
 }
 
@@ -83,4 +45,15 @@ footer {
 .social-media img {
     width: 40px;
     height: 40px;
+}
+
+/* Estilo para o footer */
+footer {
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }

@@ -5,66 +5,53 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgba(1, 22, 46, 0.986);
+    color: #333;
 }
 
 .textstyle {
-
-    width: 80%; /* Define a largura máxima do container */
+    width: 80%;
     margin: 0 auto;
-    text-align: center; /* Centraliza o texto dentro do container */
-    color: yellow
-
-
+    text-align: center;
+    color: yellow;
 }
-/* Estilos para os textos */
+
 .container {
-    width: 80%; /* Define a largura máxima do container */
-    margin: 0 auto;
-    text-align: center; /* Centraliza o texto dentro do container */
-    color: aliceblue;
-  }
-/* Estilos para o formulário */
-form {
+    width: 90%; /* Define uma largura máxima menor para o container */
+    max-width: 400px; /* Limita a largura máxima */
+    margin: 20px auto;
     background-color: #f5a20a;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 50%;
-    margin: 20px auto;
-    text-align: left;
-   
-    
+    color: aliceblue;
 }
 
-/* Estilos para os labels e inputs */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos dentro do formulário */
+}
+
 label {
-    display: block;
+    width: 90%; /* Ajusta a largura para respeitar a margem */
+    max-width: 350px; /* Limita a largura máxima */
     margin-bottom: 10px;
     color: cyan;
     text-align: left;
-
-   
-   
-    
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    width: calc(100% - 23px);
+    width: 90%; /* Ajusta a largura para respeitar a margem */
+    max-width: 350px; /* Limita a largura máxima */
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid  rgba(1, 22, 46, 0.986);
-    border-radius:   
-    
-
-    
-    
-    
- 3px;
+    border: 1px solid rgba(1, 22, 46, 0.986);
+    border-radius: 3px;
 }
 
-/* Estilo para o botão */
 button[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -72,23 +59,28 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 90%; /* O botão também ocupa 90% da largura */
+    max-width: 350px; /* Limita a largura máxima */
 }
 
-/* Estilo para o footer */
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
 
-footer{
-
+footer {
     color: aliceblue;
     text-align: center;
-
-
-
+    padding: 20px;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .erro {
     color: red;
     font-size: 12px;
     display: none;
-    margin-top: -10px; /* Ajuste conforme necessário */
-    margin-bottom: 10px; /* Ajuste conforme necessário */
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
