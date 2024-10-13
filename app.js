@@ -20,6 +20,8 @@ document.getElementById('meuFormulario').addEventListener('submit', function(eve
   // Valide o campo telefone antes de redirecionar
   if (validarTelefone()) {
       window.location.href = 'paginaobrigado.html'; // Redireciona para a página de obrigado
+  } else {
+      console.log("Erro na validação do telefone");
   }
 });
 
